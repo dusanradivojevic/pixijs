@@ -1,7 +1,7 @@
 {
-  "name": "pixi.js",
+  "name": "woder-pixijs",
   "version": "8.13.1",
-  "author": "PixiJS Team",
+  "author": "Wonder design",
   "homepage": "http://pixijs.com/",
   "bugs": "https://github.com/pixijs/pixijs/issues",
   "license": "MIT",
@@ -20,6 +20,9 @@
     "lib",
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepare": "husky install",
     "start": "run-s watch",
