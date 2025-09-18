@@ -154,9 +154,7 @@ export class BitmapTextPipe implements RenderPipe<BitmapText>
             baselineDelta -= bitmapFont.distanceField.range;
         }
 
-        // Ensure line height is included for the first line
-        const extraLineHeight = lineHeight - bitmapFont.lineHeight;
-        let currentY = extraLineHeight > 0 ? extraLineHeight / 2 : 0;
+        let currentY = 0;
 
         for (let i = 0; i < bitmapTextLayout.lines.length; i++)
         {
